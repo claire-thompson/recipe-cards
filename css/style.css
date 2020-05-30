@@ -4,6 +4,16 @@ body {
     font-size: 12px;
     font-family: 'Open Sans', Arial, sans-serif;
     color: #3B3B3B;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #DAF7F6;
+    padding: 20px 0;
 }
 
 h1,
@@ -12,6 +22,7 @@ h3 {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     color: #F16059;
     text-transform: uppercase;
+    margin: 0;
 }
 
 strong {
@@ -19,7 +30,91 @@ strong {
     font-weight: 700;
 }
 
+p {
+    margin: 0;
+}
+
 /************************ MOBILE STYLES ***********************/
+
+/* Header Styles */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100px;
+}
+
+/* Card Styles */
+
+article {
+    width: 90%;
+    margin: 10px 0;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.image img {
+    width: 100%;
+}
+
+.recipe {
+    width: 90%;
+    margin: 10px 0;
+}
+
+h2 {
+    margin: 10px 0 20px 0;
+}
+
+.prep,
+.cook,
+.total {
+    display: flex;
+    align-items: center;
+}
+
+.time {
+    border: 1px solid #3B3B3B;
+    padding: 10px 0;
+}
+
+.time img {
+    margin: 0 20px;
+}
+
+.prep,
+.cook {
+    border-bottom: 1px solid #3B3B3B;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.cook,
+.total {
+    padding-top: 10px;
+}
+.description {
+    margin: 20px 0;
+}
+
+h3 {
+    border-top: 1px solid #3B3B3B;
+    border-bottom: 1px solid #3B3B3B;
+    padding: 5px 0;
+}
+
+ul,
+ol {
+    margin: 15px 0;
+}
+
+li {
+    margin: 5px 0;
+}
 
 /************************ TABLET STYLES ***********************/
 
