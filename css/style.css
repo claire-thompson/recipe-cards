@@ -1,0 +1,26 @@
+/************************ BASE STYLES ***********************/
+
+body {
+    font-size: 12px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #3B3B3B;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    color: #F16059;
+    text-transform: uppercase;
+}
+
+strong {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/************************ MOBILE STYLES ***********************/
+
+/************************ TABLET STYLES ***********************/
+
+/************************ DESKTOP STYLES ***********************/
