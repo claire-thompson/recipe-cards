@@ -20,7 +20,7 @@
             </div>
         </header>
         <main>
-            <article id="cookies" class="card">
+            <article id="cookies" class="card" onClick="cookieClick()">
                     <div class="image">
                         <img src="img/gluten-free-sugar-cookies.jpg" alt="sugar cookies">
                     </div>
@@ -40,7 +40,7 @@
                         <p class="description">These buttery cookies have a tender texture and crispy exterior that you’re
                             sure to love!</p>
                     </div>
-                    <section class="ingredients">
+                    <section class="ingredients" id="cookieIng" style="display: none;">
                         <h3>Ingredients</h3>
                         <ul>
                             <li>2 1/2 cups gluten-free flour</li>
@@ -54,7 +54,7 @@
                             <li>1 egg</li>
                         </ul>
                     </section>
-                    <section class="directions">
+                    <section class="directions" id="cookieDir" style="display: none;">
                         <h3>Directions</h3>
                         <ol>
                             <li>Preheat oven to 350&deg; F. Line baking sheets with parchment paper.</li>
@@ -67,7 +67,7 @@
                         </ol>
                     </section>
             </article>
-            <article id="pesto" class="card">
+            <article id="pesto" class="card" onClick="pestoClick()">
                         <div class="image">
                             <img src="img/nut-free-pesto.jpg" alt="pasta with pesto">
                         </div>
@@ -87,7 +87,7 @@
                                 <p class="description">This gorgeous pesto is full of color and flavor! Serve on your favorite pasta
                                     or crackers for a delicious, healthy meal.</p>
                         </div>
-                        <section class="ingredients">
+                        <section class="ingredients" id="pestoIng" style="display: none;">
                             <h3>Ingredients</h3>
                             <ul>
                                 <li>1 cup packed basil leaves</li>
@@ -98,7 +98,7 @@
                                 <li>1/4 cup olive oil</li>
                             </ul>
                         </section>
-                        <section class="directions">
+                        <section class="directions" id="pestoDir" style="display: none;">
                             <h3>Directions</h3>
                             <ol>
                                 <li>In a food processor, pulse garlic and basil together.</li>
@@ -108,7 +108,7 @@
                             </ol>
                         </section>
             </article>
-            <article id="salad" class="card">
+            <article id="salad" class="card" onClick="saladClick()">
                         <div class="image">
                             <img src="img/watermelon-salad.jpg" alt="watermelon salad">
                         </div>
@@ -129,7 +129,7 @@
                                 and sweet honey into one delicious bowl. Serve right away on a hot summer day for a cooling
                                 treat!</p>
                         </div>
-                        <section class="ingredients">
+                        <section class="ingredients" id="saladIng" style="display: none;">
                             <h3>Ingredients</h3>
                             <ul>
                                 <li>1 seedless watermelon</li>
@@ -142,7 +142,7 @@
                                 <li>1/4 cup basil leaves, chopped</li>
                             </ul>
                         </section>
-                        <section class="directions">
+                        <section class="directions" id="saladDir" style="display: none;">
                             <h3>Directions</h3>
                             <ol>
                                 <li>Cube watermelon, or use a melon baller to scoop chunks of watermelon. Place in a
@@ -155,6 +155,61 @@
                         </section>
             </article>
         </main>
+
+        <script>
+
+            function cookieClick() {
+                var ingredients = document.getElementById("cookieIng");
+                var directions = document.getElementById("cookieDir")
+
+                if (ingredients.style.display == "none") {
+                    ingredients.style.display = "unset";
+                } else {
+                    ingredients.style.display = "none";
+                }
+
+                if (directions.style.display == "none") {
+                    directions.style.display = "unset";
+                } else {
+                    directions.style.display = "none";
+                }
+            }
+
+            function pestoClick() {
+                var ingredients = document.getElementById("pestoIng");
+                var directions = document.getElementById("pestoDir")
+
+                if (ingredients.style.display == "none") {
+                    ingredients.style.display = "unset";
+                } else {
+                    ingredients.style.display = "none";
+                }
+
+                if (directions.style.display == "none") {
+                    directions.style.display = "unset";
+                } else {
+                    directions.style.display = "none";
+                }
+            }
+
+            function saladClick() {
+                var ingredients = document.getElementById("saladIng");
+                var directions = document.getElementById("saladDir")
+
+                if (ingredients.style.display == "none") {
+                    ingredients.style.display = "unset";
+                } else {
+                    ingredients.style.display = "none";
+                }
+
+                if (directions.style.display == "none") {
+                    directions.style.display = "unset";
+                } else {
+                    directions.style.display = "none";
+                }
+            }
+        </script>
+
     </body>
 
 </html>
